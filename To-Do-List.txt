@@ -1,0 +1,8 @@
+[✔] Download Python  
+[✔] Learn virtual venv (virtual environment)  
+[✔] Learn to install Django  
+[✔] Submit Activity 1  
+[✔] Learn to use Git  
+[✔] Make repository  
+[✔] Make reflection  
+[✔] Checklist  
