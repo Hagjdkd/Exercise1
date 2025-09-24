@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block title %}Page Not Found - Django App{% endblock %}
+
+{% block content %}
+  <div class="error-page">
+    <div class="error-content">
+      <h1 class="error-code">404</h1>
+      <h2 class="error-title">Page Not Found</h2>
+      <p class="error-message">
+        Sorry, the page you are looking for doesn't exist or has been moved.
+      </p>
+      
+      <div class="error-actions">
+        <a href="{% url 'home' %}" class="btn btn-primary">Go Home</a>
+        <a href="{% url 'announcements_list' %}" class="btn btn-secondary">View Announcements</a>
+      </div>
+      
+      <div class="helpful-links">
+        <h3>Helpful Links:</h3>
+        <ul>
+          <li><a href="{% url 'home' %}">Home Page</a></li>
+          <li><a href="{% url 'about' %}">About Us</a></li>
+          <li><a href="{% url 'announcements_list' %}">Announcements</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+{% endblock %}

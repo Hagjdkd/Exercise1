@@ -3,6 +3,40 @@
 {% block title %}Home - Django App{% endblock %}
 
 {% block content %}
-  <h2>Welcome to the Home Page</h2>
-  <p><a href="">Please click here to Login</a></p>
+  <div class="text-center">
+    <h2>Welcome to My Django App</h2>
+    <p class="lead">Your one-stop destination for announcements and updates.</p>
+    
+    <div class="row mt-4">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">
+              <i class="fas fa-bullhorn"></i> Announcements
+            </h5>
+            <p class="card-text">Stay updated with our latest announcements and news.</p>
+            <a href="{% url 'announcements_list' %}" class="btn btn-primary">View Announcements</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">
+              <i class="fas fa-info-circle"></i> About Us
+            </h5>
+            <p class="card-text">Learn more about our company and mission.</p>
+            <a href="{% url 'about' %}" class="btn btn-secondary">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="mt-4">
+      <p class="text-muted">
+        <small>Need help? <a href="{% url 'about' %}">Contact us</a> or check our announcements for updates.</small>
+      </p>
+    </div>
+  </div>
 {% endblock %}

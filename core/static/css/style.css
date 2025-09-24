@@ -1,5 +1,5 @@
 html, body {
-  height: 100%;  /* allow full height */
+  height: 100%;
   margin: 0;
 }
 
@@ -7,37 +7,15 @@ body {
   font-family: Arial, sans-serif;
   background: #f9f9f9;
   color: #333;
-
-  display: flex;              /* enable flexbox */
-  flex-direction: column;     /* keep header → main → footer order */
+  display: flex;
+  flex-direction: column;
 }
 
-header {
-  background: #007bff;
-  color: white;
-  padding: 1rem;
-}
-
-header h1 {
-  margin: 0;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  margin: 0 10px;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
+/* Bootstrap overrides and custom styles */
 main {
-  flex: 1;                       
-  display: flex;                 
-  justify-content: center;       
-  align-items: center;           
+  flex: 1;
 }
+
 main .box {
   width: 240px;
   height: 250px;
@@ -46,11 +24,217 @@ main .box {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  align-items: center;
 }
 
-footer {
-  background: #333;
+/* Announcements styles */
+.announcements-list {
+  max-width: 800px;
+}
+
+.announcement-card {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.announcement-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.announcement-card h3 {
+  margin-top: 0;
+  color: #007bff;
+}
+
+.announcement-card h3 a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.announcement-card h3 a:hover {
+  color: #0056b3;
+}
+
+.announcement-meta {
+  color: #666;
+  font-size: 0.9em;
+  margin-bottom: 10px;
+}
+
+.announcement-preview {
+  color: #555;
+  line-height: 1.6;
+}
+
+.read-more-link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.read-more-link:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Announcement detail styles */
+.announcement-detail {
+  max-width: 800px;
+  background: white;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.breadcrumb {
+  background: none;
+  padding: 0;
+  margin-bottom: 20px;
+  font-size: 0.9em;
+}
+
+.breadcrumb a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.announcement-content {
+  margin: 20px 0;
+  line-height: 1.6;
+}
+
+.toggle-btn {
+  background: #007bff;
   color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-btn:hover {
+  background: #0056b3;
+}
+
+.back-link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.back-link:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* 404 Error page styles */
+.error-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+}
+
+.error-content {
   text-align: center;
-  padding: 1rem;
+  background: white;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+}
+
+.error-code {
+  font-size: 6rem;
+  font-weight: bold;
+  color: #dc3545;
+  margin: 0;
+  line-height: 1;
+}
+
+.error-title {
+  color: #333;
+  margin: 20px 0 15px 0;
+}
+
+.error-message {
+  color: #666;
+  margin-bottom: 30px;
+  font-size: 1.1em;
+}
+
+.error-actions {
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background: #007bff;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #0056b3;
+  color: white;
+}
+
+.btn-secondary {
+  background: #6c757d;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background: #545b62;
+  color: white;
+}
+
+.helpful-links {
+  text-align: left;
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+}
+
+.helpful-links h3 {
+  font-size: 1.1em;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.helpful-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.helpful-links li {
+  margin-bottom: 8px;
+}
+
+.helpful-links a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.helpful-links a:hover {
+  color: #0056b3;
+  text-decoration: underline;
 }
